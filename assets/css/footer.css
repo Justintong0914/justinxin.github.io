@@ -1,0 +1,40 @@
+	    /*...................Footer開始...................*/
+		/*Footer框架*/
+		.container{
+    box-sizing: border-box;
+    width: 100%;
+		}
+	    .footer-item3{
+	    	 box-sizing: border-box;
+		    font-size: 14px;  display: inline-block;
+  		    height: auto;
+ 		    line-height:2;
+  		    vertical-align: middle;
+  		    color: #806945;
+	    }
+	  .footer-item3 img{
+	  	width: 35px;
+	  	height: 35px;
+	  }
+	    hr.style-two {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
+            background-color: #806945;
+        }
+        .foo{
+font-family: Microsoft JhengHei;
+transition: 0.3s;
+}
+.footbt {
+position:relative;
+display: inline-block;
+border:0;
+background-color: #806945;
+background:rgba(0,0,0,0);
+margin-bottom: 20px; 
+}
+footer{
+	background-color:  #Eae2b7;
+}
+		/*...................Footer結束...................*/
