@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Waazzz</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		<style type="text/css" media="screen">
+			@import url(../assets/css/header.css);
+			@import url(../assets/css/show.css);
+			@import url(../assets/css/footer.css);
+		</style>
+		<script src="../assets/js/dialog.js"></script>
+	</head>
+	<body>
+		<div class="stay-top" id="navbar">
+			<div class="top1" ><a href="../index.html"><h1 class="weblogo" id="logo">Waazzz</h1></a></div>
+			<ul class="cool" id="brandmove">
+				
+				
+				<a href="item.html" style="text-decoration:none">
+					<li class="brand ">
+						ALL
+					</li></a>
+					<a href="women.html" style="text-decoration:none">
+						<li class="brand et">
+							WOMEN
+						</li></a>
+						<a href="men.html" style="text-decoration:none">
+							<li class="brand ">
+								MEN
+							</li></a>
+							<a href="hot.html" style="text-decoration:none">
+								<li class="brand ">
+									HOT
+								</li></a>
+								<a href="aboutus.html" style="text-decoration:none"><li class="brand rm">
+									About Us
+								</li></a>
+								
+							</ul>
+							<div class="opp" id="navright">
+								<button  class="dropbtn" onclick="showSearch();"><img src="../assets/img/search.png" class="user"></button>
+								<button  class="dropbtn" onclick="showDialog();"><img src="../assets/img/login.png" class="user"></button>
+								<button  class="dropbtn" onclick="window.open('../index.html')"><img src="../assets/img/wishlist.png" class="user"></button>
+								<button  class="dropbtn" onclick="window.open('../index.html')"><img src="../assets/img/cart.png" class="user"></button>
+							</div>
+							<!-- 如果登入
+							<div class="opp" id="navright">
+										<button  class="dropbtn" onclick="showSearch();"><img src="../assets/img/search.png" class="user"></button>
+									<button  class="dropbtn" onclick="window.open('member.html')"><img src="../assets/img/login.png" class="user"></button>
+									<button  class="dropbtn" onclick="window.open('wish.html')"><img src="../assets/img/wishlist.png" class="user"></button>
+									<button  class="dropbtn" onclick="window.open('usercar.html')"><img src="../assets/img/shopping-cart.png" class="user"></button>
+							</div>
+							-->
+						</div>
+						<script>
+						
+						window.onscroll = function() {scrollFunction()};
+						function scrollFunction() {
+						if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+						document.getElementById("navbar").style.height = "100px";
+						/*這裡改導覽列顏色*/
+						document.getElementById("navbar").style.background= "#fff";
+						document.getElementById("navright").style.top = "4vh";
+							document.getElementById("logo").style.width = "230px";
+										document.getElementById("logo").style.height = "80px";
+							document.getElementById("logo").style.float = "left";
+							document.getElementById("logo").style.margin = "0 0 0 20px";
+							document.getElementById("brandmove").style.margin = "-130px 250px 0 0";
+							document.getElementById("people").style.top = "2vh";
+							document.getElementById("people").style.left = "75vw";
+						} else {
+						document.getElementById("navbar").style.height = "25.7vh";
+						document.getElementById("navbar").style.background= "rgba(0,0,0,0)";
+						document.getElementById("navright").style.top = "20vh";
+						document.getElementById("logo").style.width = "8.3vw";
+							document.getElementById("logo").style.height = "17vh";
+							document.getElementById("logo").style.float = "none";
+							document.getElementById("logo").style.margin = "0px 0 10px 850px";
+							document.getElementById("brandmove").style.margin = "0 auto 0 auto";
+							document.getElementById("people").style.top = "9vh";
+							document.getElementById("people").style.left = "86.6vw";
+						}
+						}
+						</script>
+						<!--登入-->
+						 <div onclick="closescr();" class="dialog" id="dialog">
+                            <div class="close"><a href="#" onclick="closeDialog();"><img src="../assets/img/cross.png"></a></div>
+                            <div class="BOX1" style="z-index:-1;width: 100%;">
+                                <div class="login" style="margin:0px auto;">
+                                    <form class="form" action=".jpg" method="POST">
+                                        <h2 style="color:#FFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;會員登入</h2>
+                                        <div class="group">
+                                            <label for="user-id" style="color:#FFF; font-size: 30px;">Member account</label>
+                                            <input type="text" onKeyUp="value=value.replace(/[\W]/g,'')" name="userid" id="userid" maxlength="10">
+                                        </div>
+                                        <div class="group">
+                                            <label for="user-password" style="color:#FFF;font-size: 30px;">Password</label>
+                                            <input type="password" onKeyUp="value=value.replace(/[\W]/g,'')" name="userpassword" id="userpassword" maxlength="10">
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn" type="submit">Member login</button><br>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn" onclick="window.open('pages/editmember.html')">New customer</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+						<!--搜尋部分-->
+						<div  onclick="closescr();" class="search" id="search">
+							<div class="closee"><a href="#" onclick="closeSearch();"><img src="../assets/img/cross.png"></a></div>
+							<input type="text" placeholder="Search.." class="inputsearch">
+							<button class="searchbutton"><img src="../assets/img/search.png" class="searchpic"></button>
+						</div>
+						<!--頂部固定部分結束-->
+						<div class="nothing"></div>
+						<div class="page">
+							<div class="side1">
+								
+								<div class="stay-left">
+									<input type="checkbox" name="" id="side-menu-switch">
+									<div class="side-menu">
+										<form>
+											<input type="search" placeholder="請輸入關鍵字">
+											<button><i class="fa fa-search"></i></button>
+										</form>
+										<nav>
+											<ul>
+												<li><a class="title" href=".jsp">Burning up字母襪</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>黑黃字母襪</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>藍紅字母襪</a></li>
+											</ul>
+											<ul>
+												<li><a class="title" href=".jsp">熊熊遇見你</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>大大(咖啡)</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>胖達(黑白)</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>阿極(白色)</a></li>
+											</ul>
+											<ul>
+												<li><a class="title" href=".jsp">芝麻街襪襪</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>芝麻街襪襪(淺灰)</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>芝麻街襪襪(粉色)</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>芝麻街襪襪(鐵灰)</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>芝麻街襪襪(杏色)</a></li>
+											</ul>
+											<ul>
+												<li><a class="title" href=".jsp">美少女</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>黑色月亮</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>白色手杖</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>霧藍色愛心</a></li>
+											</ul>
+											<ul>
+												<li><a class="title" href=".jsp">高品質素色襪</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>素色襪-白色</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>素色襪-黑色</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>素色襪-奶茶色</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>素色襪-米色</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>素色襪-淺棕色</a></li>
+												<li><a href=".jsp"><i class="fa fa-cutlery" aria-hidden="true"></i>素色襪-墨綠色</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+							<div class="mainn">
+								<div class="s">
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/bar1.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/bar1-1.jpg" class="second">
+											</div>
+											<p>熊熊遇見你 胖達(熊貓)</p>
+											<p>NT$60</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/bar2.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/bar2-1.jpg" class="second">
+											</div>
+											<p>熊熊遇見你 阿極(白色)</p>
+											<p>NT$60</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/bar3.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/bar3-1.jpg" class="second">
+											</div>
+											<p>熊熊遇見你 大大(咖啡)</p>
+											<p>NT$60</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/st1.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/st1-1.jpg" class="second">
+											</div>
+											<p>芝麻街襪襪(淺灰)</p>
+											<p>NT$60</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/st2.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/st2-1.jpg" class="second">
+											</div>
+											<p>芝麻街襪襪(粉色)</p>
+											<p>NT$60</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/st3.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/st3-1.jpg" class="second">
+											</div>
+											<p>芝麻街襪襪(鐵灰)</p>
+											<p>NT$60</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/st4.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/st4-1.jpg" class="second">
+											</div>
+											<p>芝麻街襪襪(杏色)</p>
+											<p>NT$60</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/girl1.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/girl1-1.jpg" class="second">
+											</div>
+											<p>光之美少女(黑色手杖)</p>
+											<p>NT$80</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/girl2.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/girl2-1.jpg" class="second">
+											</div>
+											<p>光之美少女(霧藍色)</p>
+											<p>NT$80</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/girl3.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/girl3-1.jpg" class="second">
+											</div>
+											<p>光之美少女(白色手杖)</p>
+											<p>NT$80</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/cool1.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/cool1-1.jpg" class="second">
+											</div>
+											<p>Burning up字母襪(黑黃)</p>
+											<p>NT$70</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/cool2.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/cool2-1.jpg" class="second">
+											</div>
+											<p>Burning up字母襪(藍紅)</p>
+											<p>NT$70</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/s1.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/s1-1.jpg" class="second">
+											</div>
+											<p>素色襪-白色</p>
+											<p>NT$40</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/s2.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/s2-1.jpg" class="second">
+											</div>
+											<p>素色襪-黑色</p>
+											<p>NT$40</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/s3.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/s3-1.jpg" class="second">
+											</div>
+											<p>素色襪-奶茶色</p>
+											<p>NT$40</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/s4.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/s4-1.jpg" class="second">
+											</div>
+											<p>素色襪-米色</p>
+											<p>NT$40</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/s5.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/s5-1.jpg" class="second">
+											</div>
+											<p>素色襪-淺棕色</p>
+											<p>NT$40</p>
+										</div>
+									</a>
+									<a href=".html" style="color:black">
+										<div class="w350" style="margin:20px 20px;">
+											<div>
+												<img src="../assets/img/s6.jpg" class="first">
+											</div>
+											<div>
+												<img src="../assets/img/s6-1.jpg" class="second">
+											</div>
+											<p>素色襪-墨綠色</p>
+											<p>NT$40</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<footer>
+						<div style="width: 100%;height:80px;background-color: #fff"></div>
+							<br>
+							<hr class="style-two" style="justify-content: center;">
+							<div class="footer" style="display: flex;justify-content: center;">
+								<div class="container" style="display: flex;justify-content: center;">
+									<div class="footer-item3" style="width: auto;">
+										<p style=" font-size: 14px; line-height: 1;">WAAZZZ</p>
+										<p style=" font-size: 14px; line-height: 1;"><img src="../assets/img/time.png" alt="">&nbsp;&nbsp;&nbsp;周一至周五 A.M 8:00~ P.M 6:00</p>
+										<p style=" font-size: 14px; line-height: 1;"><img src="../assets/img/tele.png" alt="">&nbsp;&nbsp;&nbsp;(02)2860-7594</p>
+										<div class="foo">
+											<button  class="footbt"><img src="../assets/img/fb.png" class="user"></button>
+											<button  class="footbt"><img src="../assets/img/insta.png" class="user"></button>
+											<button  class="footbt"><img src="../assets/img/connect.png" class="user"></button>
+											<button  class="footbt"><img src="../assets/img/email.png" class="user"></button>
+										</div>
+									</div>
+								</div>
+							</footer>
+						</body>
+					</html>
