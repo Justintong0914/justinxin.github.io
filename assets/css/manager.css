@@ -1,0 +1,89 @@
+.manager{
+	width: 100%;
+	height: 400px;
+	text-align: center;
+}
+.manager-main{
+	background-color:#89B0AE;
+	width: 1200px;
+	height: 400px;
+	margin:50px 360px;
+}
+.manager-main h1{
+  	color: #806945;
+	font-size: 75px;
+	font-family: Microsoft JhengHei;
+}
+/**新增商品**/
+.manageradd{
+    width: 100%;
+	height: 950px;
+    margin:50px 0px;
+	text-align: center;
+}
+.login-m{
+             width: 1200px;
+	        height: 950px;
+            background-color:rgba(0,0,0,.15);
+            border-radius: 8px;
+            backdrop-filter:blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            margin:0 auto;
+            background-color:#89B0AE;
+        }
+        .form-m{
+            width: 400px;
+            color: #806945;
+            font-weight: bold;
+            font-family: Microsoft JhengHei;
+        }
+        .form-m h2{
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #FFF;
+        }
+        .form-m .group-m{
+            margin-bottom: 20px;
+        }
+        .form-m label{
+            line-height: 2;
+        }
+        .form-m input{
+            width: 100%;
+            border: 1px solid #aaa;
+            line-height: 2;
+            border-radius: 5px;
+        }
+        .form-m .btn-group-1{
+            font-size: 0;
+        }
+        .form-m .btn-3{
+            font-size: 15px;
+            border-radius: 5px;
+            border:none;
+            width: 300px;
+            padding:10px 0;
+            margin-top: 10px;
+            margin-left:15px;
+             color: #806945;
+            font-weight: bold;
+            font-family: Microsoft JhengHei;
+        }
+        .form-m .btn-3 + .btn-3{
+            margin-left:20px;
+        }
+        /**編輯商品**/
+        .manageredit{
+         width: 100%;
+         height: 100%;
+         text-align: center;
+        }
+        .manageredit-main{
+         width: 1500px;
+         height: 100%;
+         margin: 0 auto;
+         text-align: center;
+        }
+       
