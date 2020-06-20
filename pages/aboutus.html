@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Waazzz</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <style type="text/css" media="screen">
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+        @import url(../assets/css/header.css);
+        @import url(../assets/css/show.css);
+        @import url(../assets/css/footer.css);
+        @import url(../assets/css/show1.css);
+        @import url(../assets/css/about.css);
+        </style>
+        <script src="../assets/js/dialog.js"></script>
+    </head>
+    <body>
+        <div class="stay-top" id="navbar">
+            <div class="top1" ><a href="../index.html"><h1 class="weblogo" id="logo">Waazzz</h1></a></div>
+            <ul class="cool" id="brandmove">
+                
+                
+                <a href="item.html" style="text-decoration:none">
+                    <li class="brand ">
+                        ALL
+                    </li></a>
+                    <a href="women.html" style="text-decoration:none">
+                        <li class="brand et">
+                            WOMEN
+                        </li></a>
+                        <a href="men.html" style="text-decoration:none">
+                            <li class="brand ">
+                                MEN
+                            </li></a>
+                            <a href="hot.html" style="text-decoration:none">
+                                <li class="brand ">
+                                    HOT
+                                </li></a>
+                                <a href="aboutus.html" style="text-decoration:none"><li class="brand rm">
+                                    About Us
+                                </li></a>
+                                
+                            </ul>
+                            <div class="opp" id="navright">
+                                <button  class="dropbtn" onclick="showSearch();"><img src="../assets/img/search.png" class="user"></button>
+                                <button  class="dropbtn" onclick="showDialog();"><img src="../assets/img/login.png" class="user"></button>
+                                <button  class="dropbtn" onclick="window.open('../index.html')"><img src="../assets/img/wishlist.png" class="user"></button>
+                                <button  class="dropbtn" onclick="window.open('../index.html')"><img src="../assets/img/cart.png" class="user"></button>
+                            </div>
+                            <!-- 如果登入
+                            <div class="opp" id="navright">
+                                <button  class="dropbtn" onclick="showSearch();"><img src="../assets/img/search.png" class="user"></button>
+                                <button  class="dropbtn" onclick="window.open('member.html')"><img src="../assets/img/login.png" class="user"></button>
+                                <button  class="dropbtn" onclick="window.open('wish.html')"><img src="../assets/img/wishlist.png" class="user"></button>
+                                <button  class="dropbtn" onclick="window.open('usercar.html')"><img src="../assets/img/shopping-cart.png" class="user"></button>
+                            </div>
+                            -->
+                        </div>
+                        <script>
+                        
+                        window.onscroll = function() {scrollFunction()};
+                        function scrollFunction() {
+                        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                        document.getElementById("navbar").style.height = "100px";
+                        /*這裡改導覽列顏色*/
+                        document.getElementById("navbar").style.background= "#fff";
+                        document.getElementById("navright").style.top = "4vh";
+                        document.getElementById("logo").style.width = "230px";
+                        document.getElementById("logo").style.height = "80px";
+                        document.getElementById("logo").style.float = "left";
+                        document.getElementById("logo").style.margin = "0 0 0 20px";
+                        document.getElementById("brandmove").style.margin = "-130px 250px 0 0";
+                        document.getElementById("people").style.top = "2vh";
+                        document.getElementById("people").style.left = "75vw";
+                        } else {
+                        document.getElementById("navbar").style.height = "25.7vh";
+                        document.getElementById("navbar").style.background= "rgba(0,0,0,0)";
+                        document.getElementById("navright").style.top = "20vh";
+                        document.getElementById("logo").style.width = "8.3vw";
+                        document.getElementById("logo").style.height = "17vh";
+                        document.getElementById("logo").style.float = "none";
+                        document.getElementById("logo").style.margin = "0px 0 10px 850px";
+                        document.getElementById("brandmove").style.margin = "0 auto 0 auto";
+                        document.getElementById("people").style.top = "9vh";
+                        document.getElementById("people").style.left = "86.6vw";
+                        }
+                        }
+                        </script>
+                        <!--登入-->
+                       <div onclick="closescr();" class="dialog" id="dialog">
+                            <div class="close"><a href="#" onclick="closeDialog();"><img src="../assets/img/cross.png"></a></div>
+                            <div class="BOX1" style="z-index:-1;width: 100%;">
+                                <div class="login" style="margin:0px auto;">
+                                    <form class="form" action=".jpg" method="POST">
+                                        <h2 style="color:#FFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;會員登入</h2>
+                                        <div class="group">
+                                            <label for="user-id" style="color:#FFF; font-size: 30px;">Member account</label>
+                                            <input type="text" onKeyUp="value=value.replace(/[\W]/g,'')" name="userid" id="userid" maxlength="10">
+                                        </div>
+                                        <div class="group">
+                                            <label for="user-password" style="color:#FFF;font-size: 30px;">Password</label>
+                                            <input type="password" onKeyUp="value=value.replace(/[\W]/g,'')" name="userpassword" id="userpassword" maxlength="10">
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn" type="submit">Member login</button><br>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn" onclick="window.open('pages/editmember.html')">New customer</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!--搜尋部分-->
+                        <div  onclick="closescr();" class="search" id="search">
+                            <div class="closee"><a href="#" onclick="closeSearch();"><img src="../assets/img/cross.png"></a></div>
+                            <input type="text" placeholder="Search.." class="inputsearch">
+                            <button class="searchbutton"><img src="../assets/img/search.png" class="searchpic"></button>
+                        </div>
+                        <!--頂部固定部分結束-->
+                        <div class="qq"></div>
+    <div class="aboutus">
+        <center><div class="about">
+            <center>ABOUT</center>
+        </div></center>
+        <div class="a">
+            <div class="apt">
+                <img src="../assets/img/p1.jpg">
+            </div>
+            <div class="aintro">
+                <p><br>姓名 : 卓訢妤<br><br>班級 : 資管二乙<br><br>星座 : 水瓶座<br><br>興趣 : 跳舞、看海<br>                <hr style="width: 92%; margin-left:0px;margin-top: 30px;" color="#B8C6C6">心得 : 雖然我的程式能力沒有很強，但多媒體可<br>以讓我發揮美感方面的興趣，和隊友相輔相成，<br>十分有成就感!</p>
+            </div>
+        </div>
+        
+        <div class="b">
+            <div class="bpt">
+                <img src="../assets/img/p4.jpg" >
+            </div>
+            <div class="bintro">
+                <p><br>姓名 : 童偉誠<br><br>班級 : 資管二乙<br><br>星座 : 處女座 <br><br>興趣 : 打籃球 <br><br>
+                <hr style="width: 92%; margin-left:0px;margin-top: 30px;" color="#d69f7e">心得 : 前端對我來說比後段還要難，因為前端要<br>美感，而且做得好不好還蠻客觀的，不過我的隊<br>友很厲害，所以這次要靠他惹(｡･ω･｡)</p>
+            </div>
+        </div>
+
+        <div class="c">
+            <div class="cpt">
+                <img src="../assets/img/p2.jpg" >
+            </div>
+            <div class="cintro">
+                <p><br>姓名 : 賴柔君<br><br>班級 : 資管二甲<br><br>星座 : 牡羊座<br><br>興趣 : 睡覺<br><br> 
+                <hr style="width: 92%; margin-left:0px;margin-top: 30px;" color="#B8C6C6">心得 : 之前後端好雷，這次我會好好完成前端的<br>功能，我是乖寶寶 ! 耶 ! </p>
+            </div>
+        </div>
+        <div class="d">
+            <div class="dpt">
+                <img src="../assets/img/p3.jpg" >
+            </div>
+            <div class="dintro">
+                <p><br>姓名 : 林君諺<br><br>班級 : 資管二甲<br><br>星座 : 雙子座<br><br>興趣 : 跑山<br><br>
+                <hr style="width: 92%; margin-left:0px;margin-top: 30px;" color="#d69f7e">心得 : 上學期做前端太混讓隊友太累，這次做後<br>端我要出更多力讓他輕鬆點!</p>
+            </div>
+        </div>
+        <br>
+        <div class="notice">
+                <div class="noticeti">品牌理念/</div>
+                <hr class="opgg">
+                <div class="nn"><p>生命就該浪費在美好的事物上，
+                當你遇到美好的事物時，
+                就該把它分享給身邊需要的人，
+                把繽紛色彩分享給大家，
+                就是Waazzz要做的事!</p>
+                </div>
+        </div>
+                         <footer>
+                         <div style="width: 100%;height:80px;background-color: #fff"></div>
+                                <br>
+                                <hr class="style-two" style="justify-content: center;">
+                                <div class="footer" style="display: flex;justify-content: center;">
+                                    <div class="container" style="display: flex;justify-content: center;">
+                                        <div class="footer-item3" style="width: auto;">
+                                            <p style=" font-size: 14px; line-height: 1;">WAAZZZ</p>
+                                            <p style=" font-size: 14px; line-height: 1;"><img src="../assets/img/time.png" alt="">&nbsp;&nbsp;&nbsp;周一至周五 A.M 8:00~ P.M 6:00</p>
+                                            <p style=" font-size: 14px; line-height: 1;"><img src="../assets/img/tele.png" alt="">&nbsp;&nbsp;&nbsp;(02)2860-7594</p>
+                                            <div class="foo">
+                                                <button  class="footbt"><img src="../assets/img/fb.png" class="user"></button>
+                                                <button  class="footbt"><img src="../assets/img/insta.png" class="user"></button>
+                                                <button  class="footbt"><img src="../assets/img/connect.png" class="user"></button>
+                                                <button  class="footbt"><img src="../assets/img/email.png" class="user"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </body>
+                        </html>
