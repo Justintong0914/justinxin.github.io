@@ -1,0 +1,285 @@
+/*.................結帳.......................*/
+	    .bill{
+	    	width:80%;
+	    	margin-right:auto;
+	    	margin-left:auto;
+	    	margin-top:120px;
+	    	color:#806945;
+	    	font-family: Microsoft JhengHei;
+	    }
+	    .bill-title{
+	    	width:100%;
+	    	height:100px;
+	    	line-height:100px;
+	    	font-size:32px;
+	    	font-weight:500;
+	    	text-align:center;
+	    }
+	    .bill-inside{
+	    	display:flex;
+	    }
+	    .bill-table{
+	    	width:48%;
+	    	text-align:center;
+	    	margin-right:1%;
+	    	margin-left:1%;
+
+	    }
+	    .bill-table table{
+	    	width:100%;
+	    }
+	    .bill-table table th{
+	    	border-bottom:1px solid black;
+	    	width:33.333333333%;
+	    	font-size:22px;
+	    }
+	    .bill-table table td{
+	    	font-size:18px;
+	    }
+	    .bill-main{
+	    	width:48%;
+	    	text-align:center;
+	    	margin-right:1%;
+	    	margin-left:1%;
+	    }
+	    .bill-main table{
+	    	width:100%;
+	    }
+	    .bill-main th{
+	    	font-size:24px;
+	    	width:40%;
+	    	padding:10px;
+	    }
+	    .bill-main .border-bottom{
+	    	border-bottom:1px solid #696969;
+	    }
+	    .bill-select{
+	    	margin-top:10px;
+	    	text-align:left;
+	    }
+	    .bill-select > p{
+	    	font-size:20px;
+	    	width:100%;
+	    	background-color:#F5F5F5;
+	    	padding:5px;
+	    }
+	    .bill-main .deliver,.pay{
+	    	display:flex;
+	    	margin-top:5px;
+	    }
+	    .bill-main .deliver,.pay p{
+	    	padding:5px;
+	    	font-size:18px;
+	    }
+	    .bill-main .deliver select{
+	    	margin-left:24px;
+	    	height:30px;
+	    	font-size:15px;
+	    	color:#806945;
+	    }
+	    .bill-main .pay select{
+	    	margin-left:18px;
+	    	height:30px;
+	    	font-size:15px;
+	    	color:#806945;
+	    }
+	    .bill-main .buy-now{
+	    	border-top:1px solid black;
+	    	padding-top:10px;
+	    	text-align:center;
+	    }
+	    .bill-main .buy-now input{
+	    	width:240px;
+	    	height:40px;
+	    	font-size:20px;
+	    	color:white;
+	    	font-weight:500;
+	    	background-color:#806945;
+	    	color:#fff;
+	    }
+	    /*.................結帳結束...................*/
+	    /**/
+	    .hot{
+	    	width: 100%;
+	    	height: 1800px;
+	    		font-family: Microsoft JhengHei;
+	    }
+	    .hot h2{
+	    	color:#806945;
+	    	font-weight: bold;
+	    	font-size: 40px;
+	    }
+	    .mask{
+	    	width: 1400px;
+	    	height: 500px;
+	    	overflow: hidden;
+	    	border: 3px solid #806945;
+	    	margin: 30px 260px;
+	    }
+	    .boxwrap{
+	    	width:140px;
+	    	height: 500px;
+	    	-moz-transition:margin-top.5s ease-out;
+            -webkit-transition:margin-top .5s ease-out;
+            -o-transition:margin-top .5s ease-out;
+            -ms-transition:margin-top .5s ease-out;
+	    }
+	    .boxwrap:hover{
+	    	margin-top:-500px; 
+	    }
+	    .box1{
+	    	width: 1400px;
+	    	height: 500px;
+	    	background-color: #fff1e6;
+	    }
+	    .boxx1{
+           width: 600px;
+           height: 450px;
+           border:4px solid #806945;
+           margin: 20px 10px;
+           float: left;
+           border-radius: 8px; 
+	    }
+	    .boxx1 img{
+	    	width: 100%;
+	    	height: 100%
+	    }
+	    .box2{
+	    	width: 1400px;
+	    	height: 500px;
+	    	background-color: red;
+	    }
+	    .box2 img{
+            width: 100%;
+	    	height: 100%
+	    }
+	    .boxx2{
+             width: 600px;
+             height:400px;
+             margin: 30px 90px;
+             float: left;
+	    }
+	        .boxx2 h3{
+	    	color:#000;
+	    	font-weight: bold;
+	    	font-size: 40px;
+	    }
+	    .boxx2 span{
+	    	color:#806945;
+	    	font-weight: bold;
+	    	font-size: 25px;
+	    }
+	    .wishmain{
+	    	width: 100%;
+	    	height: 100%;
+	    }
+	    .wishca{
+	    	width: 1400px;
+	    	height: 1800px;
+	    	margin:30px 240px;
+position:relative;
+	    }
+	    .heart {
+	width: 30px;
+	height: 30px;
+	margin: 403px 360px;
+	position: relative;
+	background-color: #fff;
+	border: 0;
+	-webkit-animation: jump 1s infinite ease-out;
+	-moz-animation: jump 1s infinite ease-out;
+	-o-animation: jump 1s infinite ease-out;
+	animation: jump 1s infinite ease-out;
+}
+.heart::before {
+	content: "";
+	position: absolute;
+	left: 15px;
+	top: 0;
+	width: 15px;
+	height: 30px;
+	background: red;
+	border-radius: 10px 10px 0 0;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: left bottom;
+	-moz-transform-origin: left bottom;
+	-o-transform-origin: left bottom;
+	transform-origin: left bottom;
+}
+.heart::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0px;
+	width: 15px;
+	height: 30px;
+	background: red;
+	border-radius: 10px 10px 0 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: right bottom;
+	-moz-transform-origin: right bottom;
+	-o-transform-origin: right bottom;
+	transform-origin: right bottom;
+}
+@-webkit-keyframes jump {
+	0%, 60%, 75%, 90%, 100% {
+		-webkit-transform: scale(1);
+	}
+	15% {
+		-webkit-transform: scale(0.6);
+	}
+	30% {
+		-webkit-transform: scale(1);
+	}
+	45% {
+		-webkit-transform: scale(0.7);
+	}
+}
+@-moz-keyframes jump {
+	0%, 60%, 75%, 90%, 100% {
+		-moz-transform: scale(1);
+	}
+	15% {
+		-moz-transform: scale(0.6);
+	}
+	30% {
+		-moz-transform: scale(1);
+	}
+	45% {
+		-moz-transform: scale(0.7);
+	}
+}
+@-o-keyframes jump {
+	0%, 60%, 75%, 90%, 100% {
+		-o-transform: scale(1);
+	}
+	15% {
+ 		-o-transform: scale(0.6);
+	}
+	30% {
+		-o-transform: scale(1);
+	}
+	45% {
+		-o-transform: scale(0.7);
+	}
+}
+@keyframes jump {
+	0%, 60%, 75%, 90%, 100% {
+		transform: scale(1);
+	}
+	15% {
+		transform: scale(0.6);
+	}
+	30% {
+		transform: scale(1);
+	}
+	45% {
+		transform: scale(0.7);
+	}
+}
