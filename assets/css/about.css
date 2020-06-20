@@ -1,0 +1,194 @@
+/*about 照片開始*/
+.qq
+{
+	width: 100%;
+	height: 250px;
+	background-color: #F4D58D;
+}
+.aboutus
+{
+	margin:  55px 250px 25px 250px ;
+	
+}
+.about
+{
+	background-color: #89B0AE;
+	height: 100px;
+	font-size: 55px;
+	font-style: Comic Sans, cursive;
+	padding: 30px 0px 0px 0px;
+	color: #555B6E;
+}
+.a
+{
+	margin-top: 40px;
+	background-color: #FFF;
+	height:600px;
+
+}
+.apt
+{
+	float: left;
+	width: 50%;
+	background-color: #84A98C;
+
+}
+.apt img
+{
+	padding-top: 35px;
+	padding-left: 100px;
+	padding-bottom: 26px;
+}
+.aintro
+{
+	float: left;
+	width: 50%;
+	height: 583px;
+	background-color: #84A98C;
+	font-size: 30px;
+	font-family: "微軟正黑體";
+	color: #474020;
+}
+.apt{overflow:hidden;}
+.apt img{transform:scale(1,1);transition: all 1s ease-out;}
+.apt img:hover{transform:scale(1.2,1.2);}
+
+.p
+{
+	padding-top: 30px;
+
+}
+.b
+{
+	margin-top: 40px;
+	background-color: #F2D492;
+	height:600px;
+}
+.bpt
+{
+	float: left;
+	width: 50%;
+	background-color: #F2D492;
+}
+.bpt img
+{
+	padding-top: 35px;
+	padding-left: 100px;
+	padding-bottom: 26px;
+}
+.bpt{overflow:hidden;}
+.bpt img{transform:scale(1,1);transition: all 1s ease-out;}
+.bpt img:hover{transform:scale(1.2,1.2);}
+
+.bintro
+{
+	float: left;
+	width: 50%;
+	height: 588px;
+	background-color: #F2D492;
+	font-size: 30px;
+	font-family: "微軟正黑體";
+	color: #474020;
+}
+.c
+{
+	margin-top: 40px;
+	background-color: #A3B18A;
+	height:600px;
+}
+.cpt
+{
+	float: left;
+	width: 50%;
+	background-color: #A3B18A;
+}
+.cpt img
+{
+	padding-top: 35px;
+	padding-left: 100px;
+	padding-bottom: 26px;
+}
+.cpt{overflow:hidden;}
+.cpt img{transform:scale(1,1);transition: all 1s ease-out;}
+.cpt img:hover{transform:scale(1.2,1.2);}
+
+.cintro
+{
+	float: left;
+	width: 50%;
+	height: 588px;
+	background-color: #A3B18A;
+	font-size: 30px;
+	font-family: "微軟正黑體";
+	color: #474020;
+}
+.hhh
+{
+	border: 0.5px #474020;
+}
+.d
+{
+	margin-top: 40px;
+	background-color: #EAD2AC;
+	height:600px;
+}
+.dpt
+{
+	float: left;
+	width: 50%;
+	background-color: #EAD2AC;
+
+}
+.dpt img
+{
+	padding-top: 35px;
+	padding-left: 100px;
+	padding-bottom: 26px;
+}
+
+.dpt{overflow:hidden;}
+.dpt img{transform:scale(1,1);transition: all 1s ease-out;}
+.dpt img:hover{transform:scale(1.2,1.2);}
+
+.dintro
+{
+	float: left;
+	width: 50%;
+	height: 588px;
+	background-color: #EAD2AC;
+	font-size: 30px;
+	font-family: "微軟正黑體";
+	color: #474020;
+}
+/*about 照片結束*/
+/*品牌理念開始*/
+.notice
+{
+	margin-top: 80px;
+	font-family: "微軟正黑體";
+	border-width: 5px;
+	border-color:#9A774F;
+	border-style:solid;
+	padding: 20px 100px 20px 100px;
+	color: #806945;
+}
+.noticeti
+{
+	font-size: 45px;
+}
+.opgg{
+	border: 0.5px solid #806945;
+}
+.nn
+{
+	font-size: 28px;
+}
+/*品牌理念結束*/
+
+/*@waazzz*/
+.last
+{
+	margin-top: 120px;
+	font-size: 35px;
+	color: #7D8597; 
+}
